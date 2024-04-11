@@ -209,6 +209,7 @@ NOTE: Here we did not use a ref for the schema. Only the response is using the m
 ```
 
 ## POST
+NOTE: Now we include requestBody.
 ```javascript
 /**
  * @openapi
@@ -240,6 +241,7 @@ NOTE: Here we did not use a ref for the schema. Only the response is using the m
  *        description: The user was not found
  */
 ```
+It would probably be better to make a schema for requestbody.
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
