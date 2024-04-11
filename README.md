@@ -209,7 +209,7 @@ NOTE: Here we did not use a ref for the schema. Only the response is using the m
  */
 ```
 
-## POST
+## PUT
 NOTE: Now we include requestBody.
 ```javascript
 /**
@@ -253,13 +253,31 @@ NOTE: Now we include requestBody.
  */
 ```
 It would probably be better to make a schema for requestbody.
-## Contributing
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
+## DELETE
+NOTE: Now we include requestBody.
+```javascript
+/**
+ * @openapi
+ * /users/{id}:
+ *   delete:
+ *     summary: Deletes a user
+ *     tags: [Users]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: number
+ *         required: true
+ *         description: The user ID
+ *     responses:
+ *       200:
+ *         description: The user was successfully deleted
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/User'
+ *       404:
+ *         description: The user with the given ID was not found
+ */
+```
