@@ -210,6 +210,36 @@ NOTE: Here we did not use a ref for the schema. Only the response is using the m
 
 ## POST
 ```javascript
+/**
+ * @openapi
+ * /users/{id}:
+ *  put:
+ *    summary: Update the user by the id
+ *    tags: [Users]
+ *    parameters:
+ *      - in: path
+ *        name: id
+ *        schema:
+ *          type: string
+ *        required: true
+ *        description: The user id
+ *    requestBody:
+ *      required: true
+ *      content:
+ *        application/json:
+ *          schema:
+ *            $ref: '#/components/schemas/User'
+ *    responses:
+ *      200:
+ *        description: The user was updated
+ *        content:
+ *          application/json:
+ *            schema:
+ *              $ref: '#/components/schemas/User'
+ *      404:
+ *        description: The user was not found
+ */
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
