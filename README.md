@@ -90,9 +90,24 @@ Idea is to not repeat code. We can reuse this model for every comment.
 
 Good example from documentation: https://swagger.io/docs/specification/components/
 
-# Step 5: Comments
+# Step 5: Comments (GET)
 ## users.js: 
 ```javascript
+/**
+ * @openapi
+ * /users:
+ *   get:
+ *     summary: Returns the list of all the users
+ *     responses:
+ *       200:
+ *         description: The list of the users
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/User'
+ */
 ```
 
 ## Contributing
