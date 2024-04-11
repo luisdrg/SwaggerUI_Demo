@@ -255,7 +255,6 @@ NOTE: Now we include requestBody.
 It would probably be better to make a schema for requestbody.
 
 ## DELETE
-NOTE: Now we include requestBody.
 ```javascript
 /**
  * @openapi
