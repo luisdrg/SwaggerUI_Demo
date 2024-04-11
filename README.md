@@ -172,7 +172,7 @@ Update GET comment to include tag
 ```
 
 ## POST
-NOTE: Here we did not use a ref for the schema.
+NOTE: Here we did not use a ref for the schema. Only the response is using the model we created before.
 ```javascript
 /**
  * @openapi
