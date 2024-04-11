@@ -90,8 +90,9 @@ Idea is to not repeat code. We can reuse this model for every comment.
 
 Good example from documentation: https://swagger.io/docs/specification/components/
 
-# Step 5: Comments (GET)
-## users.js: 
+# Step 5: Comments
+
+## GET
 ```javascript
 /**
  * @openapi
@@ -109,10 +110,37 @@ Good example from documentation: https://swagger.io/docs/specification/component
  *                 $ref: '#/components/schemas/User'
  */
 ```
-show docs page then show how you need to add a tag so is not under default
+show docs page then show how you need to add a tag so is not under default.
 
 ```javascript
+//This is under the s
+ /**
+  * @openapi
+  * tags:
+  *   name: Users
+  *   description: The users managing API
+  */
+```
 
+add to GET comment
+
+```javascript
+/**
+ * @openapi
+ * /users:
+ *   get:
+ *     summary: Returns the list of all the users
+ *     tags: [Users]
+ *     responses:
+ *       200:
+ *         description: The list of the users
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: array
+ *               items:
+ *                 $ref: '#/components/schemas/Users'
+ */
 ```
 
 ## Contributing
