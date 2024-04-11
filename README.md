@@ -172,6 +172,7 @@ Update GET comment to include tag
 ```
 
 ## POST
+NOTE: Here we did not use a ref for the schema.
 ```javascript
 /**
  * @openapi
@@ -206,6 +207,9 @@ Update GET comment to include tag
  *         description: Bad request, name and email are required
  */
 ```
+
+## POST
+```javascript
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
