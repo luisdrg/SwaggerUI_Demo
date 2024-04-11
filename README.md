@@ -143,6 +143,11 @@ Update GET comment to include tag
  */
 ```
 
+
+## GET/id
+```javascript
+
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
