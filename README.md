@@ -122,7 +122,7 @@ show docs page then show how you need to add a tag so is not under default.
   */
 ```
 
-add to GET comment
+Update GET comment to include tag
 
 ```javascript
 /**
