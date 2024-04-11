@@ -146,7 +146,29 @@ Update GET comment to include tag
 
 ## GET/id
 ```javascript
-
+/**
+ * @openapi
+ * /users/{id}:
+ *   get:
+ *     summary: Get the user by id
+ *     tags: [Users]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: number
+ *         required: true
+ *         description: The user id
+ *     responses:
+ *       200:
+ *         description: The user description by id
+ *         contens:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/User'
+ *       404:
+ *         description: The user was not found
+ */
 ```
 ## Contributing
 
