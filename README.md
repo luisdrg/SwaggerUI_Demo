@@ -57,6 +57,36 @@ const specs = swaggerJsDoc(options);
 app.use("/docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 ```
+
+# Step 4: Model/Schema
+## users.js: 
+Idea is to not repeat code. WE can reuse this model for every comment.
+```javascript
+/**
+ * @openapi
+ * components:
+ *   schemas:
+ *     User:
+ *       type: object
+ *       required:
+ *         - id
+ *         - name
+ *       properties:
+ *         id:
+ *           type: number
+ *           description: The auto-generated id of the user
+ *         name:
+ *           type: string
+ *           description: The user name
+ *         email:
+ *           type: string
+ *           description: The user email
+ *       example:
+ *         id: 787
+ *         name: Hector
+ *         email: example@swagger.com
+ */
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
