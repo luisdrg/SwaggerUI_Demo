@@ -60,7 +60,7 @@ app.use("/docs", swaggerUI.serve, swaggerUI.setup(specs));
 
 # Step 4: Model/Schema
 ## users.js: 
-Idea is to not repeat code. WE can reuse this model for every comment.
+Idea is to not repeat code. We can reuse this model for every comment.
 ```javascript
 /**
  * @openapi
@@ -87,6 +87,14 @@ Idea is to not repeat code. WE can reuse this model for every comment.
  *         email: example@swagger.com
  */
 ```
+
+Good example from documentation: https://swagger.io/docs/specification/components/
+
+# Step 5: Comments
+## users.js: 
+```javascript
+```
+
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
