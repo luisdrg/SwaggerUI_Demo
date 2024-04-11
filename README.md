@@ -194,8 +194,8 @@ NOTE: Here we did not use a ref for the schema.
  *                 type: string
  *                 description: The user's email
  *             example:
- *               name: John
- *               email: john.doe@example.com
+ *               name: NottaRef
+ *               email: not.doe@example.com
  *     responses:
  *       201:
  *         description: The user was successfully created
