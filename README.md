@@ -139,7 +139,7 @@ add to GET comment
  *             schema:
  *               type: array
  *               items:
- *                 $ref: '#/components/schemas/Users'
+ *                 $ref: '#/components/schemas/User'
  */
 ```
 
