@@ -215,31 +215,41 @@ NOTE: Now we include requestBody.
 /**
  * @openapi
  * /users/{id}:
- *  put:
- *    summary: Update the user by the id
- *    tags: [Users]
- *    parameters:
- *      - in: path
- *        name: id
- *        schema:
- *          type: string
- *        required: true
- *        description: The user id
- *    requestBody:
- *      required: true
- *      content:
- *        application/json:
- *          schema:
- *            $ref: '#/components/schemas/User'
- *    responses:
- *      200:
- *        description: The user was updated
- *        content:
- *          application/json:
- *            schema:
- *              $ref: '#/components/schemas/User'
- *      404:
- *        description: The user was not found
+ *   put:
+ *     summary: Updates a user
+ *     tags: [Users]
+ *     parameters:
+ *       - in: path
+ *         name: id
+ *         schema:
+ *           type: integer
+ *         required: true
+ *         description: The user ID
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 description: The user's name
+ *               email:
+ *                 type: string
+ *                 description: The user's email
+ *             example:
+ *               name: nottaRefAgain
+ *               email: not2.doe@example.com
+ *     responses:
+ *       200:
+ *         description: The user was successfully updated
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/User'
+ *       404:
+ *         description: The user with the given ID was not found
  */
 ```
 It would probably be better to make a schema for requestbody.
