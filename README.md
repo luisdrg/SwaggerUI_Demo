@@ -170,6 +170,11 @@ Update GET comment to include tag
  *         description: The user was not found
  */
 ```
+
+## POST
+```javascript
+
+```
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
