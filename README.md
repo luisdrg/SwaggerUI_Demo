@@ -173,7 +173,38 @@ Update GET comment to include tag
 
 ## POST
 ```javascript
-
+/**
+ * @openapi
+ * /users:
+ *   post:
+ *     summary: Creates a new user
+ *     tags: [Users]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               name:
+ *                 type: string
+ *                 description: The user's name
+ *               email:
+ *                 type: string
+ *                 description: The user's email
+ *             example:
+ *               name: John
+ *               email: john.doe@example.com
+ *     responses:
+ *       201:
+ *         description: The user was successfully created
+ *         content:
+ *           application/json:
+ *             schema:
+ *               $ref: '#/components/schemas/User'
+ *       400:
+ *         description: Bad request, name and email are required
+ */
 ```
 ## Contributing
 
