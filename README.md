@@ -109,6 +109,10 @@ Good example from documentation: https://swagger.io/docs/specification/component
  *                 $ref: '#/components/schemas/User'
  */
 ```
+show docs page then show how you need to add a tag so is not under default
+
+ */
+```
 
 ## Contributing
 
