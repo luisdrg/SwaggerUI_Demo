@@ -145,6 +145,7 @@ Update GET comment to include tag
 
 
 ## GET/id
+Here parameters are introduced
 ```javascript
 /**
  * @openapi
